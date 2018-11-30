@@ -1,0 +1,19 @@
+alias rs=/Users/ramraju1/work/scr/rsync.sh
+alias rsjs=/Users/ramraju1/work/scr/cpJsApp.sh
+#unclean perl -pe 's/\r?\n|\r/\r\n/g' intstartup.cmd > intstartup.cmd.2 
+alias rsm="echo transferring ROOT.war to MGMT server; rsync -vrht $BR/mgmtserver/packager/target/ROOT.war root@ms:/usr/local/tomcat/webapps --progress"
+alias rsos="rsync -vrht $SRC/mgmtserver/packager/target/mgmtserver.war root@osms:/usr/local/cliqr/apps --progress"
+alias rsg="echo transferring ROOT.war to gateway; rsync -vrht $BR/gateway/target/ROOT.war root@gw:/usr/local/tomcat/webapps --progress"
+alias rsma="echo transferring ROOT.war to MGMT server; rsync -vrht $BR/mgmtserver/packager/target/ROOT.war root@ams:/usr/local/tomcat/webapps --progress"
+alias rsga="echo transferring ROOT.war to gateway; rsync -vrht $BR/gateway/target/ROOT.war root@agw:/usr/local/tomcat/webapps --progress"
+alias ftree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias ping='ping -c 5'
+alias fastping='ping -c 100 -s.2'
+alias ports='netstat -tulanp'
+alias sub='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias rmOrig='find . -iname "*.orig"|xargs rm -rf'
+alias rs_sidms="echo transferring ROOT.war to MGMT server; rsync -vrht $BR/mgmtserver/packager/target/ROOT.war root@sid_ms:/usr/local/tomcat/webapps --progress"
+alias rsjsp="rsync -vrht mgmtserver/packager/src/main/webapp/WEB-INF/views/account/*.jsp root@ms:/usr/local/tomcat/webapps/ROOT/WEB-INF/views/account/"
+alias bnoui="mvn clean install -pl \!mgmtserver/ui -DskipTests -Djacoco.skip=true"
+alias kc=kubectl
+alias mk=minikube
