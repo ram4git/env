@@ -17,3 +17,7 @@ alias rsjsp="rsync -vrht mgmtserver/packager/src/main/webapp/WEB-INF/views/accou
 alias bnoui="mvn clean install -pl \!mgmtserver/ui -DskipTests -Djacoco.skip=true"
 alias kc=kubectl
 alias mk=minikube
+alias use_efc='cd ~/.ssh;cp id_rsa.org id_rsa;cp id_rsa.pub.org id_rsa.pub; cd -'
+alias use_da='cd ~/.ssh;cp id_rsa.da id_rsa;cp id_rsa.pub.da id_rsa.pub; cd -
+'
+
